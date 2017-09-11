@@ -1,9 +1,9 @@
 # PBS-scripts
-Some scripts for managing nodes and jobs on PBS
+Some scripts for managing nodes and jobs on PBS (tested on Torque).
 
 ## pnodes.py
 
-A wrapper of `pbsnodes` to show all the nodes and their status on the PBS system. It's a python implementation of https://github.com/ryys1122/linux-shellscript/blob/master/PBS/own/pnodes with faster speed.
+A wrapper of `pbsnodes` to show all the nodes and their status. It's a Python implementation of [pnodes](https://github.com/ryys1122/linux-shellscript/blob/master/PBS/own/pnodes), but with much faster speed.
 
 ### Usage
 
@@ -19,7 +19,7 @@ $ pnodes.py
  free=7  job-excl=2  down=1  partlyused=5  offline=0  unknown=0 
 ```
 
-The status of nodes will be highlighted with colors.
+* The status of nodes will be highlighted with colors.
 
 ## showjob.py
 
