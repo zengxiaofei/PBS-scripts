@@ -83,9 +83,9 @@ def show_nodes(status_dict):
             rows.append([])
     for row in rows:
         if len(row) == 5:
-            print('  '.join(n for n in row))
+            print('\033[40  '.join(n for n in row))
         else:
-            print('  '.join(n for n in row), end='')
+            print('\033[40  '.join(n for n in row), end='')
     
     print('\n------------------------------------------------------------------')
     for state in ('free', 'part', 'je', 'un', 'off', 'down'):
